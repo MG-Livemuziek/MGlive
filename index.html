@@ -1,90 +1,236 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Live Muziek & Geluidsverhuur</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MG Music Sessions | Live Muziek & Geluidsverhuur</title>
 
-  <style>
-    body{
-      font-family:Arial,sans-serif;
-      margin:0;
-      background:#f4f4f4;
-    }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    header{
-      background:#222;
-      color:white;
-      padding:40px;
-      text-align:center;
-    }
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
+color:#fff;
+line-height:1.6;
+}
 
-    nav{
-      background:#444;
-      padding:15px;
-      text-align:center;
-    }
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin:15px;
-    }
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
 
-    section{
-      max-width:1000px;
-      margin:auto;
-      padding:40px;
-      background:white;
-    }
+.hero p{
+font-size:1.4rem;
+margin-bottom:30px;
+}
 
-    .button{
-      display:inline-block;
-      background:#e63946;
-      color:white;
-      padding:12px 20px;
-      text-decoration:none;
-      border-radius:5px;
-    }
+.btn{
+display:inline-block;
+padding:15px 30px;
+margin:10px;
+background:#d62828;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
 
-    footer{
-      background:#222;
-      color:white;
-      text-align:center;
-      padding:20px;
-    }
-  </style>
+.btn:hover{
+background:#f77f00;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.9);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+h2{
+font-size:2.5rem;
+margin-bottom:30px;
+color:#fcbf49;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1d1d1d;
+padding:25px;
+border-radius:10px;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:30px;
+color:#bbb;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>Live Muziek & Geluidsverhuur</h1>
-  <p>Bands boeken voor elk evenement</p>
-</header>
-
 <nav>
-  <a href="#bands">Bands</a>
-  <a href="#verhuur">Verhuur</a>
-  <a href="#contact">Contact</a>
+<a href="#bands">Bands</a>
+<a href="#verhuur">Verhuur</a>
+<a href="#foto">Foto's</a>
+<a href="#contact">Contact</a>
 </nav>
 
+<header>
+<div class="hero">
+<h1>MG Music Sessions</h1>
+<p>Live Muziek • Bands • Geluidsverhuur</p>
+
+<a class="btn" href="#bands">Bekijk Bands</a>
+<a class="btn" href="#contact">Offerte Aanvragen</a>
+</div>
+</header>
+
 <section id="bands">
-  <h2>Live Bands</h2>
-  <p>Wij promoten professionele live bands voor feesten, festivals en bedrijfsactiviteiten.</p>
+<h2>Live Bands</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Coverband</h3>
+<p>Pop, rock en feestmuziek voor festivals, bruiloften en bedrijfsfeesten.</p>
+</div>
+
+<div class="card">
+<h3>Akoestische Act</h3>
+<p>Perfect voor recepties, terrassen en kleinere evenementen.</p>
+</div>
+
+<div class="card">
+<h3>Band op Maat</h3>
+<p>Wij helpen bij het vinden van de juiste muzikanten voor jouw evenement.</p>
+</div>
+
+</div>
 </section>
 
 <section id="verhuur">
-  <h2>Geluidsinstallatie Verhuur</h2>
-  <p>PA-systemen, microfoons, mixers en complete geluidsets beschikbaar.</p>
+<h2>Geluidsverhuur</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Kleine Events</h3>
+<p>Complete geluidsset voor cafés, presentaties en tuinfeesten.</p>
+</div>
+
+<div class="card">
+<h3>Middelgrote Events</h3>
+<p>Professionele PA-systemen voor 100-300 bezoekers.</p>
+</div>
+
+<div class="card">
+<h3>Volledige Productie</h3>
+<p>Geluid, microfoons, mixers en technische ondersteuning.</p>
+</div>
+
+</div>
+</section>
+
+<section id="foto">
+<h2>Sfeerimpressie</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f" alt="Live Muziek">
+
+<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81" alt="Band">
+
+<img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76" alt="Festival">
+
+</div>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p>E-mail: info@jouwdomein.nl</p>
-  <a class="button" href="mailto:info@jouwdomein.nl">Neem contact op</a>
+<div class="contact">
+
+<h2>Boek een Band of Vraag een Offerte Aan</h2>
+
+<p>E-mail: info@mgmusicsessions.nl</p>
+
+<p>Regio: Ede • Arnhem • Veenendaal • Wageningen</p>
+
+<br>
+
+<a class="btn whatsapp"
+href="https://wa.me/31612345678">
+WhatsApp
+</a>
+
+</div>
 </section>
 
 <footer>
-  © 2026 Live Muziek & Geluidsverhuur
+© 2026 MG Music Sessions • Live Muziek & Geluidsverhuur
 </footer>
 
 </body>
