@@ -1,145 +1,165 @@
-<h1>Live Muziek en Geluidsinstallatie Verhuur in Ede en Gelderland</h1>
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MG Music Sessions | Live Muziek en Geluidsinstallatie Verhuur in Ede en Gelderland</title>
+
+<title>MG Music Sessions | Live Muziek en Geluidsinstallatie Verhuur in Gelderland</title>
+
+<meta name="description" content="MG Music Sessions verzorgt live muziek en verhuurt professionele geluidsinstallaties voor feesten, evenementen en bedrijfsbijeenkomsten in Ede, Wageningen, Veenendaal en omgeving.">
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#111;
-color:#fff;
-line-height:1.6;
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:#fff;
+    line-height:1.6;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,.9);
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    z-index:1000;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 header{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px 40px;
+}
+
+.hero{
+    max-width:900px;
 }
 
 .hero h1{
-font-size:4rem;
-margin-bottom:20px;
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    margin:10px;
+    background:#d62828;
+    color:#fff;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#f77f00;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    color:#fcbf49;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1d1d1d;
+    border-radius:10px;
+    padding:25px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+.contact{
+    text-align:center;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    color:#aaa;
 }
 
 @media (max-width:768px){
 
-.hero h1{
-font-size:2.2rem;
-}
+    .hero h1{
+        font-size:2.2rem;
+    }
 
-.hero p{
-font-size:1.1rem;
-}
+    .hero p{
+        font-size:1rem;
+    }
 
+    section{
+        padding:60px 20px;
+    }
 
+    .gallery{
+        grid-template-columns:1fr;
+    }
 
-.btn{
-display:inline-block;
-padding:15px 30px;
-margin:10px;
-background:#d62828;
-color:white;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-}
+    .btn{
+        display:block;
+        max-width:280px;
+        margin:10px auto;
+    }
 
-.btn:hover{
-background:#f77f00;
-}
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:rgba(0,0,0,.9);
-padding:15px;
-text-align:center;
-z-index:1000;
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:10px;
-}
-
-nav a{
-color:#fff;
-text-decoration:none;
-margin:0 20px;
-font-weight:bold;
-}
-
-section{
-padding:80px 10%;
-}
-
-h2{
-font-size:2.5rem;
-margin-bottom:30px;
-color:#fcbf49;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1d1d1d;
-padding:25px;
-border-radius:10px;
-}
-
-.card h3{
-margin-bottom:15px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:15px;
-}
-
-.gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:10px;
-}
-
-.contact{
-text-align:center;
-}
-
-.whatsapp{
-background:#25D366;
-}
-
-footer{
-background:#000;
-text-align:center;
-padding:30px;
-color:#bbb;
+    h2{
+        font-size:1.7rem;
+    }
 }
 </style>
 </head>
@@ -147,125 +167,102 @@ color:#bbb;
 <body>
 
 <nav>
-<a href="#bands">Bands</a>
-<a href="#verhuur">Verhuur</a>
-<a href="#foto">Foto's</a>
-<a href="#contact">Contact</a>
+    <a href="#bands">Bands</a>
+    <a href="#verhuur">Verhuur</a>
+    <a href="#foto">Foto's</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <header>
-<div class="hero">
-<h1>Live Muziek en Geluidsinstallatie Verhuur in Ede en Gelderland</h1>
+    <div class="hero">
+        <h1>Live Muziek en Geluidsinstallatie Verhuur in Ede en Gelderland</h1>
 
-<p>
-MG Music Sessions verzorgt live muziek en verhuurt
-geluidsinstallaties voor feesten, bedrijfsbijeenkomsten,
-en evenementen in Ede, Wageningen, Veenendaal en omgeving.
-</p>
+        <p>
+            MG Music Sessions verzorgt live muziek en professionele
+            geluidsinstallaties voor feesten, festivals, bedrijfsbijeenkomsten
+            en evenementen.
+        </p>
 
-<a class="btn" href="#bands">Bekijk Bands</a>
-<a class="btn" href="#contact">Offerte Aanvragen</a>
-</div>
+        <a class="btn" href="#bands">Bekijk Bands</a>
+        <a class="btn" href="#contact">Offerte Aanvragen</a>
+    </div>
 </header>
 
 <section>
-<h2>Welkom bij MG Music Sessions</h2>
+    <h2>Welkom bij MG Music Sessions</h2>
 
-<p>
-Op zoek naar live muziek voor een feest, bedrijfsbijeenkomst,
-of evenement? MG Music Sessions verzorgt live optredens en
-geluidsverhuur in Ede, Wageningen, Veenendaal en de rest
-van Gelderland.
-</p>
-
-<p>
-Van sfeervolle achtergrondmuziek tot compacte geluidsinstallaties:
-wij helpen graag om van ieder evenement een succes te maken.
-</p>
+    <p>
+        Op zoek naar live muziek of geluidsverhuur in Ede, Wageningen,
+        Veenendaal of omgeving? Wij verzorgen muziek en geluid voor
+        bedrijfsfeesten, festivals, verjaardagen en evenementen in heel
+        Gelderland.
+    </p>
 </section>
 
 <section id="bands">
-<h2>Live Bands</h2>
+    <h2>Live Bands</h2>
 
-<div class="cards">
+    <div class="cards">
+        <div class="card">
+            <h3>Coverband</h3>
+            <p>Pop, rock en feestmuziek voor elk evenement.</p>
+        </div>
 
-<div class="card">
-<h3>Coverband</h3>
-<p>Pop, soul muziek voor ieder evenenment,  bruiloften en bedrijfsfeesten.</p>
-</div>
+        <div class="card">
+            <h3>Akoestische Act</h3>
+            <p>Sfeervolle live muziek voor recepties en kleinere evenementen.</p>
+        </div>
 
-<div class="card">
-<h3>Akoestische Act</h3>
-<p>Perfect voor recepties, terrassen en kleinere evenementen. Sfeervolle live achtergrondmuziek in akoestische settings.</p>
-</div>
-
-<div class="card">
-<h3>Band op Maat</h3>
-<p>Wij helpen bij het vinden van de juiste muzikanten voor jouw evenement.</p>
-</div>
-
-</div>
+        <div class="card">
+            <h3>Band op Maat</h3>
+            <p>De juiste bezetting voor iedere gelegenheid.</p>
+        </div>
+    </div>
 </section>
 
 <section id="verhuur">
-<h2>Geluidsverhuur</h2>
+    <h2>Geluidsverhuur</h2>
 
-<div class="cards">
+    <div class="cards">
+        <div class="card">
+            <h3>Kleine Events</h3>
+            <p>Complete geluidssets voor feesten en presentaties.</p>
+        </div>
 
-<div class="card">
-<h3>Kleine Events</h3>
-<p>Complete geluidsset voor cafés, presentaties en tuinfeesten.</p>
-</div>
-
-<div class="card">
-<h3>Middelgrote Events</h3>
-<p>Professionele PA-systemen voor 100-200 bezoekers.</p>
-</div>
-
-<div class="card">
-<h3>Ook kunnen bandjes, sing/songwriters, entertainer, bij ons terecht voor het huren van compacte geluidsapparatuur</h3>
-<p>Professionele PA-systemen voor 100-200 bezoekers.</p>
-</div>
-
-
-</div>
+        <div class="card">
+            <h3>Middelgrote Events</h3>
+            <p>Professionele PA-systemen voor grotere groepen bezoekers.</p>
+        </div>
+    </div>
 </section>
 
 <section id="foto">
-<h2>Sfeerimpressie</h2>
+    <h2>Sfeerimpressie</h2>
 
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f" alt="Live Muziek">
-
-<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81" alt="Band">
-
-<img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76" alt="Festival">
-
-</div>
+    <div class="gallery">
+        <img src="IMG_0010.JPG" alt="Live muziek optreden">
+        <img src="IMG_3214.JPG" alt="Band optreden">
+        <img src="IMG_3229.JPG" alt="Evenement">
+    </div>
 </section>
 
 <section id="contact">
-<div class="contact">
+    <div class="contact">
+        <h2>Contact</h2>
 
-<h2>Boek een Band of Vraag een Offerte Aan</h2>
+        <p>E-mail: info@mgmusicsessions.nl</p>
+        <p>Ede • Wageningen • Veenendaal • Arnhem</p>
 
-<p>E-mail: info@mgmusicsessions.nl</p>
+        <br>
 
-<p>Regio: Ede • Arnhem • Veenendaal • Wageningen</p>
-
-<br>
-
-<a class="btn whatsapp"
-href="https://wa.me/31642303210">
-WhatsApp
-</a>
-
-</div>
+        <a class="btn whatsapp" href="https://wa.me/31642303210">
+            WhatsApp
+        </a>
+    </div>
 </section>
 
 <footer>
-© 2026 MG Music Sessions • Live Muziek & Geluidsverhuur
+    © 2026 MG Music Sessions
 </footer>
 
 </body>
