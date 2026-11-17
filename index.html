@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MG Music Sessions | Live Muziek en Geluidsinstallatie Verhuur in Gelderland</title>
+<title>MG Music Sessions | Live Muziek & Geluidsverhuur</title>
 
-<meta name="description" content="MG Music Sessions verzorgt live muziek en verhuurt geluidsinstallaties voor feesten, kleine evenementen en bedrijfsbijeenkomsten in Ede, Wageningen, Veenendaal en omgeving.">
+<meta name="description" content="MG Music Sessions verzorgt live muziek en geluidsverhuur voor feesten, bruiloften, bedrijfsbijeenkomsten en evenementen in Gelderland.">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 
@@ -33,17 +35,16 @@ position:fixed;
 top:0;
 width:100%;
 background:rgba(0,0,0,.95);
-padding:15px;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
 gap:20px;
+padding:15px;
 z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,.5);
 }
 
 nav a{
-color:#fff;
+color:white;
 text-decoration:none;
 font-weight:bold;
 }
@@ -55,15 +56,15 @@ color:#fcbf49;
 header{
 min-height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
-url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f");
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1800&q=80");
 background-size:cover;
 background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:120px 20px 40px;
+padding:120px 20px;
 }
 
 .hero{
@@ -84,21 +85,20 @@ margin-bottom:30px;
 display:inline-block;
 padding:15px 30px;
 margin:10px;
-background:#d62828;
-color:#fff;
-text-decoration:none;
 border-radius:8px;
+background:#d62828;
+color:white;
+text-decoration:none;
 font-weight:bold;
 transition:.3s;
 }
 
 .btn:hover{
 background:#f77f00;
-transform:translateY(-3px);
 }
 
-.whatsapp{
-background:#25D366;
+.whatsapp-btn{
+background:#25d366;
 }
 
 section{
@@ -106,10 +106,10 @@ padding:80px 10%;
 }
 
 h2{
-font-size:2.3rem;
-margin-bottom:25px;
-color:#fcbf49;
 text-align:center;
+margin-bottom:30px;
+font-size:2.3rem;
+color:#fcbf49;
 }
 
 .section-text{
@@ -120,25 +120,20 @@ text-align:center;
 
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 margin-top:30px;
 }
 
 .card{
-background:#1d1d1d;
+background:#1e1e1e;
 padding:25px;
 border-radius:15px;
-box-shadow:0 4px 15px rgba(0,0,0,.4);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
+box-shadow:0 4px 20px rgba(0,0,0,.4);
 }
 
 .card h3{
-margin-bottom:15px;
+margin-bottom:10px;
 color:#fcbf49;
 }
 
@@ -146,7 +141,6 @@ color:#fcbf49;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
-margin-top:30px;
 }
 
 .gallery img{
@@ -166,42 +160,73 @@ text-align:center;
 }
 
 .socials{
-margin-top:25px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:18px;
+margin-top:35px;
 }
 
 .socials a{
-display:inline-block;
-margin:10px;
-padding:12px 20px;
-background:#333;
-color:#fff;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:28px;
+color:white;
 text-decoration:none;
-border-radius:6px;
+transition:.3s;
+box-shadow:0 5px 15px rgba(0,0,0,.4);
 }
 
 .socials a:hover{
-background:#555;
+transform:translateY(-6px) scale(1.08);
+}
+
+.facebook{
+background:#1877f2;
+}
+
+.instagram{
+background:linear-gradient(
+45deg,
+#f58529,
+#feda77,
+#dd2a7b,
+#8134af,
+#515bd4
+);
+}
+
+.youtube{
+background:#ff0000;
+}
+
+.whatsapp{
+background:#25d366;
+}
+
+.spotify{
+background:#1db954;
 }
 
 footer{
 background:#000;
-text-align:center;
 padding:30px;
+text-align:center;
 color:#bbb;
 }
 
-@media (max-width:768px){
+@media(max-width:768px){
 
 .hero h1{
-font-size:2.2rem;
+font-size:2.5rem;
 }
 
 .hero p{
 font-size:1rem;
-}
-
-section{
-padding:60px 20px;
 }
 
 .btn{
@@ -210,12 +235,8 @@ max-width:300px;
 margin:10px auto;
 }
 
-.gallery{
-grid-template-columns:1fr;
-}
-
-h2{
-font-size:1.8rem;
+section{
+padding:60px 20px;
 }
 
 }
@@ -226,7 +247,7 @@ font-size:1.8rem;
 <body>
 
 <nav>
-<a href="#over">Over Ons</a>
+<a href="#over">Over</a>
 <a href="#bands">Bands</a>
 <a href="#verhuur">Verhuur</a>
 <a href="#foto">Foto's</a>
@@ -239,34 +260,33 @@ font-size:1.8rem;
 <h1>Live Muziek voor Elk Evenement</h1>
 
 <p>
-Bands, live acts en geluidsverhuur voor feesten,
-bedrijfsbijeenkomsten en evenementen in Gelderland.
+Live bands en geluidsverhuur voor bruiloften,
+bedrijfsfeesten, festivals en evenementen in Gelderland.
 </p>
 
-<a class="btn" href="#bands">Bekijk Bands</a>
-<a class="btn" href="#contact">Offerte Aanvragen</a>
+<a href="#contact" class="btn">Offerte aanvragen</a>
+<a href="#bands" class="btn">Bekijk aanbod</a>
 
 </div>
 </header>
 
 <section id="over">
 
-<h2>Welkom bij MG Music Sessions</h2>
+<h2>MG Music Sessions</h2>
 
 <div class="section-text">
 
 <p>
 MG Music Sessions verzorgt live muziek en professionele
 geluidsinstallaties voor feesten, bruiloften,
-bedrijfsbijeenkomsten en kleine evenementen in Ede, Wageningen,
-Veenendaal en de rest van Gelderland.
+horeca en bedrijfsbijeenkomsten.
 </p>
 
 <br>
 
 <p>
-Van sfeervolle achtergrondmuziek tot complete geluidsverhuur:
-wij helpen graag om van ieder evenement een succes te maken.
+Van een intiem akoestisch optreden tot een complete PA-installatie:
+wij helpen jouw evenement professioneel neer te zetten.
 </p>
 
 </div>
@@ -275,23 +295,23 @@ wij helpen graag om van ieder evenement een succes te maken.
 
 <section id="bands">
 
-<h2>Live Bands</h2>
+<h2>Live Muziek</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Coverband</h3>
-<p>Pop, soul muziek voor bruiloften, kleine evenementen en bedrijfsfeesten.</p>
+<p>Pop, soul en classics voor bruiloften en bedrijfsfeesten.</p>
 </div>
 
 <div class="card">
 <h3>Akoestische Act</h3>
-<p>Sfeervolle live muziek voor recepties, terrassen en kleinere evenementen.</p>
+<p>Sfeervolle achtergrondmuziek voor recepties en terrassen.</p>
 </div>
 
 <div class="card">
 <h3>Band op Maat</h3>
-<p>Wij helpen je bij het vinden van de juiste bezetting voor jouw evenement.</p>
+<p>De juiste muzikale invulling voor ieder evenement.</p>
 </div>
 
 </div>
@@ -305,21 +325,20 @@ wij helpen graag om van ieder evenement een succes te maken.
 <div class="cards">
 
 <div class="card">
-<h3>Kleine Events</h3>
-<p>Complete geluidssets voor presentaties, tuinfeesten en cafés.</p>
+<h3>Kleine evenementen</h3>
+<p>Compacte systemen voor presentaties en tuinfeesten.</p>
 </div>
 
 <div class="card">
-<h3>Middelgrote Events</h3>
-<p>PA-systemen voor kleine evenementen en optredens tot 250 personen.</p>
+<h3>Middelgrote evenementen</h3>
+<p>Professionele PA-systemen tot circa 250 personen.</p>
 </div>
 
 <div class="card">
-<h3>Verhuur compacte geluidsinstallatie</h3>
-<p>Compact pa-systeem voor singer-songwriter, akoestische band, entertainer.</p>
+<h3>Verhuur op maat</h3>
+<p>Oplossingen voor artiesten, bands en organisatoren.</p>
 </div>
 
-  
 </div>
 
 </section>
@@ -330,19 +349,10 @@ wij helpen graag om van ieder evenement een succes te maken.
 
 <div class="gallery">
 
-<img src="IMG_0010.JPG" alt="Live muziek optreden">
-
+<img src="IMG_0010.JPG" alt="Live optreden">
 <img src="IMG_3214.JPG" alt="Band optreden">
-
-<img src="LD system.png" alt="Verhuur">
-
-<img src="Logo MG1.png" alt="logo">
-
-<img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f" alt="Live concert">
-
-<img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81" alt="Muziek optreden">
-
-<img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76" alt="Festival podium">
+<img src="LD system.png" alt="Geluidsinstallatie">
+<img src="Logo MG1.png" alt="MG Music Sessions logo">
 
 </div>
 
@@ -360,7 +370,9 @@ wij helpen graag om van ieder evenement een succes te maken.
 
 <br>
 
-<a class="btn whatsapp" href="https://wa.me/31642303210">
+<a class="btn whatsapp-btn"
+href="https://wa.me/31642303210"
+target="_blank">
 WhatsApp
 </a>
 
@@ -368,33 +380,31 @@ WhatsApp
 
 <a class="facebook"
 href="https://facebook.com/mgrift"
-target="_blank"
-aria-label="Facebook">
+target="_blank">
 <i class="fab fa-facebook-f"></i>
 </a>
 
 <a class="instagram"
 href="https://instagram.com/mglivemuziek"
-target="_blank"
-aria-label="Instagram">
+target="_blank">
 <i class="fab fa-instagram"></i>
 </a>
 
 <a class="youtube"
-href="https://youtube.com/@JOUWKANAAL"
-target="_blank"
-aria-label="YouTube">
+href="https://youtube.com">
 <i class="fab fa-youtube"></i>
 </a>
 
+<a class="spotify"
+href="https://spotify.com">
+<i class="fab fa-spotify"></i>
+</a>
+
 <a class="whatsapp"
-href="https://wa.me/31642303210"
-target="_blank"
-aria-label="WhatsApp">
+href="https://wa.me/31642303210">
 <i class="fab fa-whatsapp"></i>
 </a>
 
-</div>
 </div>
 
 </div>
