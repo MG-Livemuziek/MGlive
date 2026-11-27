@@ -32,7 +32,12 @@
 html{
     scroll-behavior:smooth;
 }
-
+<script>
+document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+});
+</script>
+    
 body{
     background:#eae6df;
     color:#2e2e2e;
@@ -85,11 +90,11 @@ header{
 
 .hero-image{
     width:100%;
-    max-height:650px;
-    object-fit:cover;
+    height:auto;
+    max-height:none;
+    object-fit:contain;
     display:block;
-
-filter:
+    filter:
         grayscale(100%)
         contrast(110%)
         brightness(90%);
